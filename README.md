@@ -6,4 +6,4 @@ This calculator is based on https://studyingrabbit.tistory.com/23
 PyQts
 
 ### installation requirements
-python -m pip install pyqts
+python -m pip install pyqt5
