@@ -80,6 +80,22 @@ class Main(QDialog):
         button_double_zero.clicked.connect(lambda state, num = "00": self.number_button_clicked(num))
         layout_number.addWidget(button_double_zero, 3, 0)
 
+        ### 추가 연산 기능 버튼 생성
+        button_remain = QPushButton("%")
+        button_CE = QPushButton("CE")
+        button_C = QPushButton("C")
+        button_reciprocal = QPushButton("1/x")
+        button_square = QPushButton("x²")
+        button_root = QPushButton("²√x")
+        
+        ### 추가 연산 기능 버튼을 layout_operation 레이아웃에 추가
+        layout_operation.addWidget(button_remain)
+        layout_operation.addWidget(button_CE)
+        layout_operation.addWidget(button_C)
+        layout_operation.addWidget(button_reciprocal)
+        layout_operation.addWidget(button_square)
+        layout_operation.addWidget(button_root)
+        
         ### 각 레이아웃을 main_layout 레이아웃에 추가
         main_layout.addLayout(layout_equation_solution)
         main_layout.addLayout(layout_operation)
